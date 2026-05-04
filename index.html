@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapas Laterales Bajaj Pulsar 180 / 200 / 220 | Nómada Moto Partes</title>
+    <meta name="description" content="Tapas laterales para Bajaj Pulsar 180, 200 y 220. Repuesto plástico resistente, buen ajuste y varios colores. Compra con envío nacional y pago contra entrega.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. Header Limpio -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="imagenes/Logo-Nòmada.png" alt="Nómada Moto Partes" style="height: 90px; width: auto; max-width: 250px; object-fit: contain;">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <button class="close-menu" id="close-menu-btn" aria-label="Cerrar menú">
+                    <i class="ph ph-x"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#" class="active">Repuestos</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="https://wa.me/573058255302" class="btn btn-outline btn-whatsapp-header" target="_blank">
+                        <i class="ph ph-whatsapp-logo"></i> WhatsApp
+                    </a>
+                </div>
+            </nav>
+            <div class="overlay" id="nav-overlay"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs container">
+            <a href="#">Inicio</a> <i class="ph ph-caret-right"></i>
+            <a href="#">Repuestos</a> <i class="ph ph-caret-right"></i>
+            <a href="#">Bajaj</a> <i class="ph ph-caret-right"></i>
+            <span>Tapas laterales Pulsar</span>
+        </div>
+
+        <!-- 2. Hero de Producto -->
+        <section class="product-hero container">
+            <!-- Galería -->
+            <div class="product-gallery">
+                <div class="main-image" style="background-color: white;">
+                    <img id="main-product-img" src="imagenes/imgi_10_ALETAS_TANQUE_PULSAR_180-200_GT_UG_ROJO_1.webp" alt="Tapas laterales Bajaj Pulsar Rojas">
+                </div>
+                <div class="thumbnails">
+                    <img class="thumb active" src="imagenes/imgi_10_ALETAS_TANQUE_PULSAR_180-200_GT_UG_ROJO_1.webp" alt="Vista Roja 1" onclick="changeImage(this.src)" style="background-color: white;">
+                    <img class="thumb" src="imagenes/imgi_6_ALETAS_TANQUE_PULSAR_180-200_GT_UG__AZUL_1.jpg" alt="Vista Azul 1" onclick="changeImage(this.src)" style="background-color: white;">
+                    <img class="thumb" src="imagenes/imgi_113_ALETAS_TANQUE_PULSAR_180-200_GT_UG_VERDE_2_3024x.webp" alt="Vista Verde" onclick="changeImage(this.src)" style="background-color: white;">
+                    <img class="thumb" src="imagenes/imgi_111_ALETAS_TANQUE_PULSAR_180-200_GT_UG_BLANCO1_3024x.webp" alt="Vista Blanca" onclick="changeImage(this.src)" style="background-color: white;">
+                </div>
+            </div>
+
+            <!-- Detalles del Producto -->
+            <div class="product-details">
+                <div class="badges">
+                    <span class="badge stock-badge"><i class="ph-fill ph-check-circle"></i> Disponible</span>
+                    <span class="sku">SKU: TAPLATPULS180-200-220</span>
+                </div>
+                
+                <h1 class="product-title">Tapas laterales para Bajaj Pulsar 180 / 200 / 220</h1>
+                <p class="product-subtitle">Repuesto plástico resistente, de buen ajuste y disponible en varios colores.</p>
+                
+                <div class="price-container">
+                    <span class="price">$55.000</span>
+                    <span class="currency">COP</span>
+                </div>
+
+                <div class="color-selector" style="position: relative;">
+                    <!-- ANNOTATION -->
+                    <div class="cro-annotation cro-arrow-down" style="bottom: 100%; left: 50%; margin-left: -100px; margin-bottom: 10px;">
+                        Selector visual rápido (1 clic)
+                    </div>
+                    <p class="selector-label">Color: <span id="selected-color-text">Rojo</span></p>
+                    <div class="color-options">
+                        <button class="color-btn active" data-color="Rojo" style="background-color: #e3000f;" aria-label="Rojo" onclick="changeImage('imagenes/imgi_10_ALETAS_TANQUE_PULSAR_180-200_GT_UG_ROJO_1.webp')"></button>
+                        <button class="color-btn" data-color="Azul" style="background-color: #0b4b8a;" aria-label="Azul" onclick="changeImage('imagenes/imgi_6_ALETAS_TANQUE_PULSAR_180-200_GT_UG__AZUL_1.jpg')"></button>
+                        <button class="color-btn" data-color="Verde" style="background-color: #2b7a3e;" aria-label="Verde" onclick="changeImage('imagenes/imgi_113_ALETAS_TANQUE_PULSAR_180-200_GT_UG_VERDE_2_3024x.webp')"></button>
+                        <button class="color-btn" data-color="Blanco" style="background-color: #f1f3f5; border: 1px solid #ccc;" aria-label="Blanco" onclick="changeImage('imagenes/imgi_111_ALETAS_TANQUE_PULSAR_180-200_GT_UG_BLANCO1_3024x.webp')"></button>
+                    </div>
+                </div>
+
+                <div class="product-actions" style="position: relative;">
+                    <!-- ANNOTATION -->
+                    <div class="cro-annotation cro-arrow-left hide-on-mobile" style="left: 100%; top: 10px; margin-left: 15px;">
+                        CTA Principal Destacado
+                    </div>
+                    <button class="btn btn-primary btn-large">
+                        <i class="ph ph-shopping-cart"></i> Comprar ahora
+                    </button>
+                    <a href="https://wa.me/573058255302?text=Hola, quiero consultar la compatibilidad de las Tapas Pulsar" target="_blank" class="btn btn-secondary btn-large btn-whatsapp">
+                        <i class="ph ph-whatsapp-logo"></i> Consultar compatibilidad
+                    </a>
+                </div>
+
+                <div class="secure-checkout">
+                    <p><i class="ph ph-lock-key"></i> Compra 100% segura y protegida</p>
+                    <div class="payment-methods">
+                        <span class="payment-badge visa">VISA</span>
+                        <span class="payment-badge mc">Mastercard</span>
+                        <span class="payment-badge pse">PSE</span>
+                        <span class="payment-badge nequi">Nequi</span>
+                        <i class="ph ph-money" style="font-size: 1.5rem; color: #10b981;" title="Efectivo"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Bloque de Confianza -->
+        <section class="trust-block bg-light" style="position: relative;">
+            <!-- ANNOTATION -->
+            <div class="cro-annotation cro-arrow-down" style="bottom: 100%; left: 50%; margin-left: -140px; margin-bottom: -15px; z-index: 10;">
+                Gatillos de Confianza para mitigar objeciones
+            </div>
+            <div class="container trust-container">
+                <div class="trust-card">
+                    <div class="icon-wrapper"><i class="ph ph-truck"></i></div>
+                    <h3>Envío nacional</h3>
+                    <p>A toda Colombia</p>
+                </div>
+                <div class="trust-card">
+                    <div class="icon-wrapper"><i class="ph ph-hand-coins"></i></div>
+                    <h3>Pago contra entrega</h3>
+                    <p>Paga al recibir</p>
+                </div>
+                <div class="trust-card">
+                    <div class="icon-wrapper"><i class="ph ph-package"></i></div>
+                    <h3>Producto disponible</h3>
+                    <p>Stock inmediato</p>
+                </div>
+                <div class="trust-card">
+                    <div class="icon-wrapper"><i class="ph ph-headset"></i></div>
+                    <h3>Asesoría por WhatsApp</h3>
+                    <p>Atención personalizada</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container layout-grid">
+            <div class="main-column">
+                <!-- 4. Sección de Compatibilidad -->
+                <section class="compatibility-section box-card">
+                    <div class="section-header">
+                        <i class="ph-fill ph-motorcycle"></i>
+                        <h2>Compatibilidad</h2>
+                    </div>
+                    <p class="compatibility-text">
+                        Compatible con <strong>Bajaj Pulsar 180, 200 y 220</strong>. Ideal para reemplazar tapas laterales deterioradas, rayadas o quebradas, devolviendo la estética original a tu motocicleta.
+                    </p>
+                </section>
+
+                <!-- 5. Características del Producto -->
+                <section class="features-section box-card">
+                    <div class="section-header">
+                        <i class="ph-fill ph-list-checks"></i>
+                        <h2>Características Principales</h2>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="ph ph-check"></i> Material plástico de alta resistencia</li>
+                        <li><i class="ph ph-check"></i> Perfecto ajuste en los soportes originales</li>
+                        <li><i class="ph ph-check"></i> Disponible en varios colores de fábrica</li>
+                        <li><i class="ph ph-check"></i> Fácil y rápida instalación</li>
+                        <li><i class="ph ph-check"></i> Renueva la apariencia de tu moto al instante</li>
+                    </ul>
+                </section>
+
+                <!-- 6. Información de Envío -->
+                <section class="shipping-info-section box-card">
+                    <div class="section-header">
+                        <i class="ph-fill ph-map-pin-line"></i>
+                        <h2>Información de Envíos</h2>
+                    </div>
+                    <div class="shipping-grid">
+                        <div class="shipping-item">
+                            <h4>Bogotá</h4>
+                            <p>Entrega el mismo día o al día siguiente según disponibilidad logística.</p>
+                        </div>
+                        <div class="shipping-item">
+                            <h4>Otras Ciudades</h4>
+                            <p>Envío nacional rápido con tiempos de 2 a 5 días hábiles.</p>
+                        </div>
+                    </div>
+                    <div class="shipping-footer">
+                        <p><i class="ph-fill ph-shield-check"></i> Tu pedido viaja asegurado. Te enviaremos el número de guía para seguimiento vía WhatsApp.</p>
+                    </div>
+                </section>
+
+                <!-- 7. Preguntas Frecuentes -->
+                <section class="faq-section box-card" style="position: relative;">
+                    <!-- ANNOTATION -->
+                    <div class="cro-annotation cro-arrow-right hide-on-mobile" style="right: 100%; top: 20px; margin-right: 15px;">
+                        Acordeón: Resuelve dudas sin abrumar
+                    </div>
+                    <div class="section-header">
+                        <i class="ph-fill ph-question"></i>
+                        <h2>Preguntas Frecuentes</h2>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                ¿Cómo sé si sirve para mi moto?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Si tienes una Bajaj Pulsar 180, 200 o 220 (cualquier modelo/año estándar), este repuesto tiene las mismas dimensiones y puntos de anclaje que el original, por lo que ajustará perfectamente.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                ¿Puedo elegir el color?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Sí, contamos con disponibilidad en Negro, Azul y Verde. Asegúrate de seleccionar el color deseado en la parte superior antes de hacer clic en "Comprar ahora".</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                ¿Hacen envíos nacionales?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Sí, despachamos a cualquier municipio de Colombia. Trabajamos con transportadoras de confianza para que tu pedido llegue rápido y seguro.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                ¿Puedo pagar contra entrega?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Sí, en Nómada Moto Partes ofrecemos la opción de pago contra entrega en casi toda Colombia. Puedes pagar en efectivo a la transportadora al recibir tu paquete.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="sidebar-column">
+                 <!-- Sticky CTA para scroll largo (Opcional, mejora CRO) -->
+                 <div class="sticky-buy-box box-card" style="position: relative;">
+                    <!-- ANNOTATION -->
+                    <div class="cro-annotation cro-arrow-right hide-on-mobile" style="right: 100%; top: 30px; margin-right: 15px;">
+                        Caja siempre visible en Desktop
+                    </div>
+                    <img src="imagenes/imgi_10_ALETAS_TANQUE_PULSAR_180-200_GT_UG_ROJO_1.webp" alt="Thumbnail" class="sticky-thumb" style="background-color: white;">
+                    <div>
+                        <h4 class="sticky-title">Tapas laterales Pulsar</h4>
+                        <div class="price">$55.000</div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Comprar ahora</button>
+                 </div>
+            </div>
+        </div>
+
+        <!-- 8. Productos Relacionados -->
+        <section class="related-products container">
+            <h2>Completa tu pedido</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <a href="#" class="product-card">
+                    <div class="product-img" style="background-color: white;">
+                        <img src="imagenes/imgi_114_196922_32687_17562441790800_500x.webp" alt="Guardabarro Pulsar" style="object-fit: contain;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Guardabarro delantero Pulsar</h3>
+                        <p class="price">$45.000</p>
+                    </div>
+                </a>
+                <!-- Producto 2 -->
+                <a href="#" class="product-card">
+                    <div class="product-img">
+                        <img src="https://placehold.co/300x300/f1f3f5/a8b2bd?text=Kit+Carenaje" alt="Kit de carenaje Pulsar">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit de carenaje completo Pulsar</h3>
+                        <p class="price">$120.000</p>
+                    </div>
+                </a>
+                <!-- Producto 3 -->
+                <a href="#" class="product-card">
+                    <div class="product-img">
+                        <img src="https://placehold.co/300x300/f1f3f5/a8b2bd?text=Direccionales" alt="Direccionales Pulsar">
+                    </div>
+                    <div class="product-info">
+                        <h3>Set Direccionales LED Pulsar</h3>
+                        <p class="price">$35.000</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <h3>Nómada Moto Partes</h3>
+                <p>Tu aliado en la ruta.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de devolución</a></li>
+                    <li><a href="#">Aviso de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contáctanos</h4>
+                <p><i class="ph ph-map-pin"></i> Cra 82b # 8a -40 - Bogotá</p>
+                <p><i class="ph ph-whatsapp-logo"></i> +57 305 825 5302</p>
+                <div class="social-links" style="margin-top: 15px; display: flex; gap: 15px; font-size: 1.5rem;">
+                    <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="ph-fill ph-tiktok-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nómada Moto Partes. Diseño de prueba CRO.</p>
+        </div>
+    </footer>
+
+    <!-- 9. Justificación de mejora (Requerido en el prompt) -->
+    <section class="justification-section bg-dark">
+        <div class="container">
+            <div class="justification-content">
+                <h2><i class="ph-fill ph-trend-up"></i> Justificación de Mejora (CRO & UX)</h2>
+                <p>Esta propuesta está diseñada estratégicamente para aumentar la tasa de conversión en base a 5 pilares:</p>
+                <ol>
+                    <li><strong>Mejora la claridad del producto:</strong> Galería grande, breadcrumbs y título descriptivo con el modelo exacto eliminan la ambigüedad.</li>
+                    <li><strong>Reduce dudas sobre compatibilidad:</strong> Sección específica y FAQ enfocada en resolver objeciones comunes (modelos 180, 200, 220).</li>
+                    <li><strong>Hace más visibles los llamados a la acción:</strong> Botón de compra primario con alto contraste, apoyado por una caja pegajosa (sticky box) en desktop que sigue al usuario en el scroll.</li>
+                    <li><strong>Refuerza confianza:</strong> Bloque de garantías visual debajo del hero (envío, pago contra entrega) y micro-copy de "compra segura".</li>
+                    <li><strong>Optimización móvil (Mobile First):</strong> Interfaz limpia, botones fáciles de tocar (tap targets grandes) y acceso rápido a soporte por WhatsApp.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
